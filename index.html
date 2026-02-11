@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoya Nuestra Causa | Donaciones</title>
+    <meta name="description"
+        content="Ayúdanos a seguir adelante. Aceptamos donaciones internacionales y locales en Colombia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo" class="nav-img">
+            <span>AP<span class="highlight">Mods</span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="https://t.me/apmodsx" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero mini-hero">
+        <div class="container">
+            <div class="hero-branding fade-in">
+                <h1>¿Me regalas un café? ☕ <span class="gradient-text">Buy me a Coffee?</span></h1>
+            </div>
+            <div class="hero-buttons fade-in delay-2">
+                <a href="https://t.me/apmodsx" target="_blank" class="btn btn-secondary"
+                    style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i class="fab fa-telegram"></i> Canal / Channel</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="donar" class="donation-section compact-section">
+        <div class="container">
+
+            <div class="payment-grid-unified">
+
+                <!-- Bre-B -->
+                <div class="payment-card-mini bre-b-card">
+                    <div class="mini-icon bre-b-bg">B</div>
+                    <div class="mini-details">
+                        <h4>Bre-B</h4>
+                        <p class="mono-text">Llave: @dimanap</p>
+                    </div>
+                    <button class="btn-icon" onclick="copyText('@dimanap')"><i class="far fa-copy"></i></button>
+                </div>
+
+                <!-- PayPal -->
+                <div class="payment-card-mini">
+                    <div class="mini-icon paypal-bg"><i class="fab fa-paypal"></i></div>
+                    <div class="mini-details">
+                        <h4>PayPal</h4>
+                        <p class="detail-text">Fast & Secure</p>
+                    </div>
+                    <a href="https://paypal.me/apmodsgroup" target="_blank" class="btn-icon link-btn"><i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <!-- Crypto: Bitcoin -->
+                <div class="payment-card-mini">
+                    <div class="mini-icon crypto-bg"><i class="fab fa-bitcoin"></i></div>
+                    <div class="mini-details">
+                        <h4>Bitcoin (BTC)</h4>
+                        <p class="mono-text text-truncate">bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh</p>
+                    </div>
+                    <button class="btn-icon" onclick="copyText('bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh')"><i
+                            class="far fa-copy"></i></button>
+                </div>
+
+                <!-- Crypto: ETH/USDT -->
+                <div class="payment-card-mini">
+                    <div class="mini-icon eth-bg"><i class="fab fa-ethereum"></i></div>
+                    <div class="mini-details">
+                        <h4>USDT / ETH (ERC20)</h4>
+                        <p class="mono-text text-truncate">0x71C7656EC7ab88b098defB751B7401B5f6d8976F</p>
+                    </div>
+                    <button class="btn-icon" onclick="copyText('0x71C7656EC7ab88b098defB751B7401B5f6d8976F')"><i
+                            class="far fa-copy"></i></button>
+                </div>
+
+                <!-- Crypto: TRC20 -->
+                <div class="payment-card-mini">
+                    <div class="mini-icon trc-bg"><i class="fas fa-dollar-sign"></i></div>
+                    <div class="mini-details">
+                        <h4>USDT (TRC20)</h4>
+                        <p class="mono-text text-truncate">TXjY9x...ExampleAddress...zK</p>
+                    </div>
+                    <button class="btn-icon" onclick="copyText('TXjY9x...ExampleAddress...zK')"><i
+                            class="far fa-copy"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <h4>APMods</h4>
+                <p>Mods & Modules for Android.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://t.me/apmodsx" target="_blank"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 APMods. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast">Copiado al portapapeles!</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
