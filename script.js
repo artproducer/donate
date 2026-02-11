@@ -14,6 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Update Year
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+        yearSpan.innerText = new Date().getFullYear();
+    }
 });
 
 // Copy to Clipboard

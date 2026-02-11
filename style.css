@@ -209,13 +209,21 @@ body {
 }
 
 .payment-grid-unified {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    /* Slightly smaller cards */
-    gap: 1rem;
-    /* Tighter gap */
-    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1000px;
+    /* Slightly wider container */
     margin: 0 auto;
+}
+
+.payment-grid-unified>* {
+    flex: 1 1 300px;
+    /* Grow, Shrink, Basis */
+    max-width: 450px;
+    /* Prevent being too wide */
+    min-width: 280px;
 }
 
 /* Ensure mini cards look good in unified grid */
@@ -311,6 +319,10 @@ body {
 
 .mini-details {
     flex: 1;
+    min-width: 0;
+    /* Crucial for text-truncate to work in flexbox */
+    padding-right: 0.5rem;
+    /* Add some spacing before button */
 }
 
 
@@ -331,8 +343,8 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 200px;
-    /* Adjust as needed */
+    max-width: 100%;
+    /* Adapts to container width */
     display: block;
 }
 
